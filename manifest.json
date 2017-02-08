@@ -1,0 +1,16 @@
+{
+// 必须的字段
+  "name": "Hacg Download",
+  "version": "1.0",
+  "manifest_version": 2,
+  // 建议提供的字段
+  "description": "Hacg thunder hash download",
+  // 根据需要提供
+  //"homepage_url": "http://path/to/homepage",
+  "content_scripts": [
+    {
+      "matches": ["http://www.hacg.fi/*"],
+      "js": ["js/jquery-3.1.1.min.js","js/function.js"]
+    }
+  ]
+}
